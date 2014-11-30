@@ -1,0 +1,12 @@
+<%= link_to 'Add champion', new_champion_path %>
+
+<% @champions.each do |champion| %>
+	<p>
+		Name: <%= champion.name %> 
+		| <%= link_to 'Edit', edit_champion_path(champion) %> 
+		| <%= link_to 'Delete', champion, method: :delete %>
+
+		<br />
+
+	</p>
+<% end %>
