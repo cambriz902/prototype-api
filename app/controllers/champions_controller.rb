@@ -4,6 +4,9 @@ class ChampionsController < ApplicationController
 	def index
 		#will have template
 		@champions = Champion.all
+		respond_to do |format|
+			format.html
+			format.json { render json: @champions}
 	end
 
 	#display an individual record
@@ -54,7 +57,6 @@ class ChampionsController < ApplicationController
 		@champion.destroy
 
 		redirect_to champions_path
-
 	end
 
 	private
