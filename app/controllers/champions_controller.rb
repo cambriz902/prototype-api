@@ -7,6 +7,7 @@ class ChampionsController < ApplicationController
 		respond_to do |format|
 			format.html
 			format.json { render json: @champions}
+		end
 	end
 
 	#display an individual record
