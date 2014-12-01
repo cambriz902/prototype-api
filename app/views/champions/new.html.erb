@@ -1,7 +1,10 @@
 <%=  form_for @champion do |f| %>
 
 	<%= f.label :name %> <br />
-	<%= f.text_field :name %>
+	<%= f.text_field :name %> <br />
+
+	<%= f.label :portrait %> <br />
+	<%= f.text_field :portrait %> <br />
 
 	<%= f.submit %>
 <% end %>

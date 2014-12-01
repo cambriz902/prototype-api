@@ -62,7 +62,7 @@ class ChampionsController < ApplicationController
 
 	private
 			def allowed_params
-				params.require(:champion).permit(:name) 
+				params.require(:champion).permit(:name, :portrait) 
 			end
 
 

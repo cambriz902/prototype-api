@@ -2,10 +2,11 @@
 
 <% @champions.each do |champion| %>
 	<p>
-		Name: <%= champion.name %> 
+
+		Name: <%= champion.name %> <br />
+		Portrait: <%= champion.portrait %> <br />
 		| <%= link_to 'Edit', edit_champion_path(champion) %> 
 		| <%= link_to 'Delete', champion, method: :delete %>
-
 		<br />
 
 	</p>
