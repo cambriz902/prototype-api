@@ -1,0 +1,25 @@
+<%= link_to 'Add Champion Counters', new_champion_counter_path %>
+
+<% @champion_counters.each do |champion| %>
+	<p>
+
+		Name: <%= champion.name %> <br />
+		Strong against: <br />
+		1)<%= champion.strongOne %> 
+		2)<%= champion.strongTwo %> 
+		3)<%= champion.strongThree %>
+		4)<%= champion.strongFour %> 
+		5)<%= champion.strongFive %> <br />
+		Weak against: <br />
+		1)<%= champion.weakOne %>
+		2)<%= champion.weakTwo %>
+		3)<%= champion.weakThree %>
+		4)<%= champion.weakFour %>
+		5)<%= champion.weakFive %>
+
+		| <%= link_to 'Edit', edit_champion_counter_path(champion) %> 
+		| <%= link_to 'Delete', champion, method: :delete %>
+		<br />
+
+	</p>
+<% end %>

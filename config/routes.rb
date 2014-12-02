@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root "champions#index"
   resources :champions
+  resources :champion_counters
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

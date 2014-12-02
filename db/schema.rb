@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141201034338) do
+ActiveRecord::Schema.define(version: 20141202005305) do
+
+  create_table "champion_counters", force: true do |t|
+    t.string   "name"
+    t.string   "strongOne"
+    t.string   "strongTwo"
+    t.string   "strongThree"
+    t.string   "strongFour"
+    t.string   "strongFive"
+    t.string   "weakOne"
+    t.string   "weakTwo"
+    t.string   "weakThree"
+    t.string   "weakFour"
+    t.string   "weakFive"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "champions", force: true do |t|
     t.string   "name"
