@@ -4,7 +4,7 @@ class ChampionCountersController < ApplicationController
 		@champion_counters = ChampionCounter.all
 		respond_to do |format|
 			format.html
-			format.json { render json: @champions}
+			format.json { render json: @champion_counters}
 		end
 	end
 
